@@ -1,0 +1,165 @@
+/* mobile first */
+:root {
+  margin:0;
+  padding: 0;
+  font-family: "Courier New";
+  font-size: 1.2rem;
+  --primary-border-radius: 5px;
+  --primary-vertical-margin: 20px;
+  background-color: #00f;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#main {
+  display: grid;
+  grid-auto-columns: 99%;
+  grid-auto-rows: repeat(8, auto);
+  margin: 10px;
+  padding: 5px;
+  background: linear-gradient(
+    45deg,
+    rgba(360, 360, 360, 0.8),
+    rgba(360, 360, 360, 0.6),
+    rgba(360, 360, 360, 0.15)
+    );
+  border-radius: 8px;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.15rem;
+}
+label {
+  display: block;
+  margin: 10px 0;
+}
+form {
+  margin: auto;
+  width: 99%;
+}
+#title {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0 auto;
+}
+#description {
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+}
+input, select, textarea {
+  font-size: 1rem;
+}
+textarea {
+  width: 100%;
+  border-radius: 3px;
+  outline-color: #fff;
+  padding-left: 5px;
+}
+button[type="submit"] {
+  grid-area: submit;
+  border-style: solid;
+  border-radius: var(--primary-border-radius);
+  width: 100%;
+  margin: auto;
+  height: 7vh;
+  background-color: #00f;
+  color: #fff;
+  font-size: 1.25rem;
+  border-color: #00f;
+}
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #00f;
+  outline-color: #fff;
+}
+input, select {
+  height: 6.5vh;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--primary-border-radius);
+  border-color: #fff;
+  outline-color: #fff;
+}
+option {
+  outline-style: none;
+}
+input {
+  text-align: center;
+}
+input[type="text"], input[type="email"] {
+  width: 99%;
+}
+input[type="number"] {
+  width: 20%;
+}
+input[type="checkbox"], input[type="radio"] {
+  margin-left: 10px;
+}
+select {
+  width: 40vmin;
+  margin-left: 40vmin;
+}
+#dropdown {
+  float: right;
+}
+.item {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.circle {
+  margin: 30px auto;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  border-color: blue;
+  color: blue;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.circle::before{
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: -60px;
+  width: 60px;
+  height: 1px;
+  background-color: blue;
+}
+.circle::after{
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  right: -60px;
+  width: 60px;
+  height: 1px;
+  background-color: blue;
+}
+/* Tablets and Desktop */
+@media (min-width: 680px) {
+  #main {
+    width: 60%;
+    margin: 10px auto;
+    padding: 7px;
+    font-size: 1.25rem;
+  }
+  #description  {
+    font-size: 1.1rem;
+  }
+  input, select, textarea {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 900px) {
+  #main {
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+  }
+}

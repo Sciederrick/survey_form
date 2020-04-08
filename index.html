@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>survey</title>
+    <link href="./fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <main id="main">
+        <h1 id="title">Quality Assuarance <span style="background-color: #1034a6; color: #fff;">Survey</span> Form</h1>
+        <p id="description">This survey aims to establish points of weakness in our service delivery right from manufacturing phase to the exchange of ownership of our products. Your contribution will be anonymous. Thanks in advance!
+        </p>
+      <form id="survey-form" action="">
+        <div class="item item1">
+          <div class="circle">1</div>
+
+          <label id="name-label">Name:
+            <input type="text" id="name" name="name" autocomplete="off" placeholder="John Doe" required>
+          </label>
+          <label id="email-label">Email:
+            <input type="email" id="email" name="email" autocomplete="off" placeholder="johndoe@example.com" required>
+          </label>
+          <label id="number-label">Age:
+            <input type="number" id="number" name="number" min="16" max="120" placeholder="21" autocomplete="off" required>
+          </label>
+        </div>
+
+        <div class="item item2">
+          <div class="circle">2</div>
+          <select name="outlet" id="dropdown">
+            <option value="kirichwa">Kirichwa&nbsp;Outlet</option>
+            <option value="lenana">Lenana&nbsp;Outlet</option>
+            <option value="kikuyu">Kikuyu&nbsp;Outlet</option>
+            <option value="south_b">South&nbsp;B&nbsp;Outlet</option>
+          </select>
+        </div>
+
+         <div class="item item3">
+            <h2>Best Product</h2>
+            <label id="wardrobe">
+              <input type="radio" name="best_product" value="wardrobe">Wardrobe
+            </label>
+            <label id="mirror">
+              <input type="radio" name="best_product" value="digitized_mirror">Digitized&nbsp;Mirror
+            </label>
+            <label id="digitized_glass_table">
+              <input type="radio" name="best_product" value="digitized_glass_table">Digitized&nbsp;Glass&nbsp;Table
+            </label>
+            <label id="eventful_chairs">
+              <input type="radio" name="best_product" value="eventful_chairs">Eventful&nbsp;Chairs
+            </label>
+        </div>
+
+        <div class="item item4">
+          <div class="circle">3</div>
+           <h2>Areas to Improve</h2>
+           <label id="product_delivery">
+              <input type="checkbox" name="improvement_areas" value="product_delivery">Product Delivery
+            </label>
+            <label id="product_material">
+              <input type="checkbox" name="improvement_areas" value="product_material">Product Material
+            </label>
+            <label id="customer_care">
+              <input type="checkbox" name="improvement_areas" value="customer_care">Customer Care
+            </label>
+            <label id="online_services">
+              <input type="checkbox" name="improvement_areas" value="online_services">Online Services
+            </label>
+        </div>
+
+        <div class="item item5">
+          <div class="circle">4</div>
+          <textarea name="additional_comments" rows="10" cols="55" placeholder="comments..." id="additional_comments"></textarea>
+          <button type="submit" id="submit"><i class="fas fa-feather"></i></button>
+        </div>
+      </form>
+    </main>
+  </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
