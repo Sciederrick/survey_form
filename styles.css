@@ -125,7 +125,8 @@ select {
   text-align: center;
   position: relative;
   border-color: blue;
-  color: blue;
+  background-color: #00f;
+  color: #fff;
   font-size: 1.1rem;
   font-weight: bold;
 }
