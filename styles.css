@@ -122,26 +122,58 @@ input[type='radio']:after {
      visibility: visible;
      border: 2px solid white;
  }
-
- input[type='radio']:checked:after {
-     width: 15px;
-     height: 15px;
-     border-radius: 15px;
-     top: -2px;
-     left: -1px;
-     position: relative;
-     background: linear-gradient(
-       45deg,
-       #fff,
-       #fff,
-       #00f,
-       #00f
-       );
+input[type='radio']:hover:after {
      content: '';
-     display: inline-block;
-     visibility: visible;
-     border: 2px solid white;
+     border: 2px inset #00f;
  }
+input[type='radio']:checked:after {
+   width: 15px;
+   height: 15px;
+   border-radius: 15px;
+   top: -2px;
+   left: -1px;
+   position: relative;
+   background: linear-gradient(
+     45deg,
+     #fff,
+     #fff,
+     #00f,
+     #00f
+     );
+   content: '';
+   display: inline-block;
+   visibility: visible;
+   border: 2px solid white;
+}
+input[type='checkbox'] {
+  position: relative;
+}
+input[type='checkbox']:checked:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  height: 4.5px;
+  width: 12px;
+  background-color: #00f;
+  transform: rotate(43deg);
+}
+input[type='checkbox']:checked:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  height: 5px;
+  width: 22px;
+  background: linear-gradient(
+    90deg,
+    #DEDEDE,
+    #00f,
+    #00f,
+    #00f
+    );
+  transform: rotate(-52deg);
+}
 select {
   width: 40vmin;
   margin-left: 40vmin;
