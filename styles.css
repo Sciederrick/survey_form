@@ -108,6 +108,33 @@ input[type="checkbox"], input[type="radio"] {
   height: 20px;
   margin: 10px 15px 10px auto;
 }
+input[type='radio']:after {
+     width: 15px;
+     height: 15px;
+     border-radius: 15px;
+     top: -2px;
+     left: -1px;
+     position: relative;
+     background-color: #fff;
+     content: '';
+     display: inline-block;
+     visibility: visible;
+     border: 2px solid white;
+ }
+
+ input[type='radio']:checked:after {
+     width: 15px;
+     height: 15px;
+     border-radius: 15px;
+     top: -2px;
+     left: -1px;
+     position: relative;
+     background-color: #00f;
+     content: '';
+     display: inline-block;
+     visibility: visible;
+     border: 2px solid white;
+ }
 select {
   width: 40vmin;
   margin-left: 40vmin;
